@@ -34,6 +34,6 @@ class cipher():
 
 if __name__=="__main__":
     myCipher = cipher(5)
-    text = "Very simple encryption"
-    print(myCipher.encrpyt(myCipher.encrpyt(text)))
+    text = "K "
+    print((myCipher.encrpyt(myCipher.encrpyt(text))))
     
