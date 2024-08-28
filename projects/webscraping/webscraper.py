@@ -25,7 +25,7 @@ def extract_numbers(soup:bs):
     numbers = []
     num_lists =[]
     for num in data:
-        if num:
+        if num  and num.get_text().isnumeric():
             numbers.append(int(num.get_text()))
     while(len(numbers)!=0):
         temp_list = numbers[0:7]
